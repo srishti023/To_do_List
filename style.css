@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://elements-resized.envatousercontent.com/elements-cover-images/220e171a-c219-4c58-906c-edd202cd7f6e?w=2038&cf_fit=scale-down&q=85&format=auto&s=4971eb7da9eab709b8c7fafe36f76a34ae56a298a7576ce4beed46974b08158d");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed in place */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  backdrop-filter: blur(2px);
+  font-family: Roboto;
+}
+
+.container {
+  width: 90%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: crimson;
+  margin: 3rem 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: crimson;
+}
+
+.add-task {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-task input[type="text"] {
+  width: 50vw;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: crimson;
+  background-color: rgba(128, 128, 128, 0.404);
+}
+
+.add-task button {
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.add-task button:hover{
+  background-color: rgb(186, 14, 48);
+}
+
+.tasks {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.task-item button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.task-item button:hover{
+  background-color: rgb(186, 14, 48);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .add-task input[type="text"] {
+    font-size: 14px;
+  }
+
+  .add-task button {
+    font-size: 14px;
+  }
+
+  .tasks {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .add-task input[type="text"] {
+    font-size: 12px;
+  }
+
+  .add-task button {
+    font-size: 12px;
+  }
+
+  .tasks {
+    font-size: 14px;
+  }
+}
